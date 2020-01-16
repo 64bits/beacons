@@ -61,7 +61,7 @@ class Channels(private val permissionClient: PermissionClient,
     }
 
     private fun startMonitoring(request: DataRequest, result: MethodChannel.Result) {
-        private var operation: BeaconsClient.Operation? = null
+        var operation: BeaconsClient.Operation? = null
         operation = BeaconsClient.Operation(BeaconsClient.Operation.Kind.Monitoring, request.region, request.inBackground) { result ->
         }
         beaconsClient.addRequest(operation!!, request.permission)
