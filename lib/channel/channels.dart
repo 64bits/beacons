@@ -47,14 +47,14 @@ class _Channels {
     return;
   }
 
-  Future<BeaconsResult> startMonitoring(_DataRequest request) async {
+  Future<void> startMonitoring(_DataRequest request) async {
     final response = await _invokeChannelMethod(
       _loggingTag,
       _channel,
       'startMonitoring',
       _Codec.encodeDataRequest(request),
     );
-    return _Codec.decodeResult(response);
+    return; //_Codec.decodeResult(response);
   }
 
   Future<void> stopMonitoring(BeaconRegion region) async {
