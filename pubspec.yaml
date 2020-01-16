@@ -12,8 +12,9 @@ dependencies:
     sdk: flutter
 
   streams_channel:
-    git: git://github.com/loup-v/streams_channel.git
-    ref: 5e5241a1a8fc3d500b50c4145c31b5fa46a9dfd9
+    git:
+      url: git://github.com/loup-v/streams_channel.git
+      ref: 5e5241a1a8fc3d500b50c4145c31b5fa46a9dfd9
 
 flutter:
   plugin:
