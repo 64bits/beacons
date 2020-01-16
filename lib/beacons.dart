@@ -79,7 +79,7 @@ class Beacons {
     ));
   }
 
-  static Future<BeaconsResult> startMonitoring({
+  static Future<void> startMonitoring({
     @required BeaconRegion region,
     @required bool inBackground,
     LocationPermission permission = const LocationPermission(
